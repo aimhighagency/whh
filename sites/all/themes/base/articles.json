@@ -1,0 +1,22 @@
+var articles = {
+	{
+		id : 1,
+		title : "the title",
+		Maker : makers.,
+		price : 600,
+		source_url : "http://www.aetherapparel.com/collections/mens-accessories/products/explorer-sunglass",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+		title : "the title",
+
+	}
+}

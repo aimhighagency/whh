@@ -1,0 +1,106 @@
+/* VARS 
+-------------------------------------------------------------- */
+$body_width: 				100%;
+$main_width:				1000px;
+$gutter:					   10px;
+$controls_width:			40px;
+$body_pad:					20px;
+$main_width: 				680px;
+$footer_height: 			350px;
+$socail_width: 			50px;
+
+
+$trans:	  					.3s;
+
+/* COLORS  */
+$text_main: 				#000;									/* DARK GREY  */
+$text_accent: 				#999;								/* RED  */
+$page_bg:					#f1f1f1;
+$body_bg:					#fff;
+
+$font_main:					'Raleway', sans-serif;
+$font_header:				'Raleway', sans-serif;
+
+$default-transition-property : all;
+$default-transition-duration : .3s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+
+
+/* MIX-INS 
+-------------------------------------------------------------- */
+@mixin font($font: $font_main, $font_weight: 300){
+	font-family: $font, sans-serif;
+	font-weight: $font_weight;
+}
+
+@mixin link_trans($hov_color: $text_accent){
+	cursor: pointer;
+	transition: color $trans ease;
+	&:hover{color: $hov_color;}
+}
+
+
+@mixin bp($point) {
+  @if $point == l {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == m {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == s {
+    @media (max-width: 400px)  { @content; }
+  }
+}
+
+
+/* EXTEND
+-------------------------------------------------------------- */
+.inline_block{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/* EXTRAS
+-------------------------------------------------------------- */
+*{
+	@include box-sizing(border-box);
+}
+
+
+
+html, body {
+  height: 100%;
+}
+#wrapper {
+  min-height: 100%;
+  margin-bottom: -$footer_height; 
+}
+#wrapper:after {
+  content: "";
+  display: block;
+}
+#footer, #wrapper:after {
+  height: $footer_height; 
+}
+
+
+
+
+
