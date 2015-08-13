@@ -841,11 +841,11 @@ ul.menu li{
 		}
 
 		@include bp(l){
-			width: 33.3%;
+			width: 25%;
 		}
 
 		@include bp(m){
-			width: 50%;
+			width: 33.3%;
 		}
 
 		@include bp(s){

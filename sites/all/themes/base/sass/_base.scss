@@ -46,7 +46,7 @@ $default-transition-delay    : false;
     @media (max-width: 1600px) { @content; }
   }
   @else if $point == m {
-    @media (max-width: 768px) { @content; }
+    @media (max-width: 900px) { @content; }
   }
   @else if $point == s {
     @media (max-width: 400px)  { @content; }
