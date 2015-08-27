@@ -861,6 +861,7 @@ ul.menu li{
 -------------------------------------------------------------- */
 #colorbox{
   z-index: 800;
+  overflow: visible !important;
 }
 
 #cboxOverlay{
